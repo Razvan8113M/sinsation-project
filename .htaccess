@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /sinsation
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /sinsation/index.php/$1 [L]
